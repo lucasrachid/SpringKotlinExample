@@ -4,8 +4,10 @@ import br.com.nextage.microservice.exemplo.adapters.dto.PokemonDTO
 
 interface PokemonService {
 
-    fun searchPokemonById(id: Long): PokemonDTO?;
+    fun searchPokemonById(id: Long): PokemonDTO?
 
     fun insertPokemonById(id: Long): PokemonDTO?
+
+    fun deleteById(id: Long): String
 
 }

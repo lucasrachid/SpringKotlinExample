@@ -67,4 +67,17 @@ class PokemonServiceImpl(
         return null;
     }
 
+    override fun deleteById(id: Long): String {
+        try {
+            var pokemonToDelete = pokemonRepository.findById(id)
+            if(!pokemonToDelete.isEmpty){
+                pokemonRepository.deleteById(id)
+            }
+        }catch (e: Exception){
+            e.stackTrace
+            return "Pokemon não foi excluído, processo com erro!"
+        }
+        return "Pokemon excluído com sucesso!"
+    }
+
 }

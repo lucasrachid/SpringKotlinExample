@@ -24,9 +24,9 @@ class PokemonController {
         return ResponseEntity.status(HttpStatus.CREATED).body(pokemonService.insertPokemonById(id))
     }
 
-//    @DeleteMapping(value = ["/v1/{id}/"])
-//    @ResponseStatus(value = HttpStatus.OK)
-//    fun deleteById(@PathVariable("id") id: Long) {
-//        pessoaService.deleteById(id)
-//    }
+    @DeleteMapping(value = ["/v1/deletePokemonById/{id}"])
+    @ResponseStatus(value = HttpStatus.OK)
+    fun deleteById(@PathVariable("id") id: Long): ResponseEntity<String> {
+        return ResponseEntity.status(HttpStatus.CREATED).body(pokemonService.deleteById(id))
+    }
 }
