@@ -1,0 +1,27 @@
+2022-12-23 16:24:26.433  INFO 80648 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 80648 (C:\workspace_intellij\SpringKotlinExample\target\classes started by user in C:\workspace_intellij\SpringKotlinExample)
+2022-12-23 16:24:26.438  INFO 80648 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 16:24:28.765  INFO 80648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 16:24:28.899  INFO 80648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2022-12-23 16:24:29.293  INFO 80648 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 16:24:30.109  INFO 80648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 16:24:30.124  INFO 80648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 16:24:30.125  INFO 80648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 16:24:30.340  INFO 80648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 16:24:30.340  INFO 80648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3792 ms
+2022-12-23 16:24:30.549  INFO 80648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 16:24:31.035  INFO 80648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 16:24:31.059  INFO 80648 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 16:24:31.059  INFO 80648 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 16:24:31.068  WARN 80648 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 16:24:31.111  INFO 80648 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.028s)
+2022-12-23 16:24:31.120  INFO 80648 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 16:24:31.121  INFO 80648 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 16:24:31.269  INFO 80648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 16:24:31.354  INFO 80648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 16:24:31.670  INFO 80648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 16:24:31.855  INFO 80648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 16:24:32.540  INFO 80648 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 16:24:32.552  INFO 80648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 16:24:33.954  WARN 80648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 16:24:37.379  INFO 80648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 16:24:38.461  INFO 80648 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 14.38 seconds (JVM running for 18.444)
