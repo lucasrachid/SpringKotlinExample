@@ -14,7 +14,7 @@ class PokemonController {
     @Autowired
     private lateinit var pokemonService: PokemonService
 
-    @GetMapping(value = ["/v1/{idPokemon}/"])
+    @GetMapping(value = ["/v1/{idPokemon}"])
     fun searchPokemonById(@PathVariable("idPokemon") id: Long): ResponseEntity<PokemonDTO?> {
         return ResponseEntity.status(HttpStatus.OK).body(pokemonService.searchPokemonById(id))
     }

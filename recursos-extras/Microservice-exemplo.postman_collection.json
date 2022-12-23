@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "5977b690-d7f6-4d52-a0cf-a745850d4140",
+		"_postman_id": "b8952d07-5270-42bb-9704-eee6569c2adc",
 		"name": "Microservice-exemplo",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "7449059"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -227,6 +226,49 @@
 								"v1",
 								"1",
 								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pokemon",
+			"item": [
+				{
+					"name": "getPokemonById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All Pokemon from API Poke V2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/pokemon/v1/insertPokemon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"pokemon",
+								"v1",
+								"insertPokemon"
 							]
 						}
 					},
