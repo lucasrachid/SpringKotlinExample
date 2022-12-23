@@ -2,6 +2,7 @@ package br.com.nextage.microservice.exemplo.adapters.service
 
 import br.com.nextage.microservice.exemplo.adapters.dto.CharacterDTO
 import br.com.nextage.microservice.exemplo.adapters.dto.PokemonDTO
+import br.com.nextage.microservice.exemplo.adapters.model.PokemonEntity
 import br.com.nextage.microservice.exemplo.adapters.repository.PokemonRepository
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -13,7 +14,6 @@ import org.springframework.web.reactive.function.client.WebClient
 import org.springframework.web.reactive.function.client.toEntity
 import org.springframework.web.util.UriComponentsBuilder
 import reactor.core.publisher.Mono
-import java.io.IOException
 
 @Service
 class PokemonServiceImpl(
@@ -22,13 +22,6 @@ class PokemonServiceImpl(
 
     @Autowired
     private lateinit var pokemonRepository: PokemonRepository;
-
-    @Value("\${micro-service.pokemon.url}")
-    private val url: String? = null
-
-    private val pathTest: String = "posts"
-
-    private val client = OkHttpClient();
 
     override fun searchPokemonById(id: Long): PokemonDTO? {
         val result = webClient
@@ -44,7 +37,34 @@ class PokemonServiceImpl(
             .toEntity<PokemonDTO>()
             .block()
         return result?.body!!
+    }
 
+    override fun insertPokemonById(id: Long): PokemonDTO? {
+        var pokemonEntityList: ArrayList<PokemonEntity> = arrayListOf()
+        var pokemonDTO: PokemonDTO? = null
+        for(i in 1..905){
+            try{
+                var buscaPokemonDTO = pokemonRepository.findById(i.toLong());
+                if(buscaPokemonDTO.isEmpty){
+                    pokemonDTO = searchPokemonById(i.toLong());
+                    var pokemonEntity = PokemonEntity();
+                    pokemonEntity.id = pokemonDTO?.id
+                    pokemonEntity.nome = pokemonDTO?.name
+                    pokemonEntity.ordem = pokemonDTO?.order
+                    pokemonEntity.altura = pokemonDTO?.height
+                    pokemonEntity.peso = pokemonDTO?.weight
+                    pokemonEntity.experiencia_base = pokemonDTO?.base_experience
+                    pokemonEntity.local_para_encontrar = pokemonDTO?.location_area_encounters
+                    pokemonEntity.padrao = pokemonDTO?.is_default
+                    pokemonEntityList.add(pokemonEntity)
+                }
+            }catch (e: Exception){
+                e.stackTrace;
+            }
+        }
+
+        pokemonRepository.saveAll(pokemonEntityList);
+        return null;
     }
 
 }

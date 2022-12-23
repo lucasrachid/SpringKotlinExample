@@ -18,4 +18,15 @@ class PokemonController {
     fun searchPokemonById(@PathVariable("idPokemon") id: Long): ResponseEntity<PokemonDTO?> {
         return ResponseEntity.status(HttpStatus.OK).body(pokemonService.searchPokemonById(id))
     }
+
+    @PostMapping(value = ["/v1/insertPokemon"])
+    fun insertPokemonById(@RequestBody id: Long): ResponseEntity<PokemonDTO?> {
+        return ResponseEntity.status(HttpStatus.CREATED).body(pokemonService.insertPokemonById(id))
+    }
+
+//    @DeleteMapping(value = ["/v1/{id}/"])
+//    @ResponseStatus(value = HttpStatus.OK)
+//    fun deleteById(@PathVariable("id") id: Long) {
+//        pessoaService.deleteById(id)
+//    }
 }

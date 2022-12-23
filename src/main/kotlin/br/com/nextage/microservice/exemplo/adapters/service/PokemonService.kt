@@ -6,4 +6,6 @@ interface PokemonService {
 
     fun searchPokemonById(id: Long): PokemonDTO?;
 
+    fun insertPokemonById(id: Long): PokemonDTO?
+
 }

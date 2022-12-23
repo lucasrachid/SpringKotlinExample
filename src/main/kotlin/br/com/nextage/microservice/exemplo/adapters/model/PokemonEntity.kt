@@ -1,19 +1,14 @@
 package br.com.nextage.microservice.exemplo.adapters.model
 
-import org.springframework.data.jpa.repository.Temporal
-
 import java.io.Serializable
-
-import java.util.*
-
 import javax.persistence.*
 
 @Entity
 @Table(name = "pokemon")
 class PokemonEntity(
+
         @Id
         @Column(name = "id")
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long? = null,
 
         @Column(name = "nome")

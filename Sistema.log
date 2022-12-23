@@ -3463,3 +3463,430 @@ Original Stack Trace:
 2022-12-23 15:01:46.699  WARN 55760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-12-23 15:01:49.937  INFO 55760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
 2022-12-23 15:01:50.947  INFO 55760 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 16.203 seconds (JVM running for 19.83)
+2022-12-23 15:04:10.954  INFO 55760 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:04:10.956  INFO 55760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-23 15:04:10.964  INFO 55760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-23 15:04:21.084  INFO 61296 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 61296 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:04:21.087  INFO 61296 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:04:23.512  INFO 61296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:04:23.628  INFO 61296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:04:23.909  INFO 61296 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:04:24.438  INFO 61296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:04:24.460  INFO 61296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:04:24.460  INFO 61296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:04:24.655  INFO 61296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:04:24.655  INFO 61296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3419 ms
+2022-12-23 15:04:24.930  INFO 61296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:04:25.551  INFO 61296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:04:25.574  INFO 61296 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:04:25.574  INFO 61296 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:04:25.581  WARN 61296 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:04:25.623  INFO 61296 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.026s)
+2022-12-23 15:04:25.633  INFO 61296 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:04:25.634  INFO 61296 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:04:25.743  INFO 61296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:04:25.825  INFO 61296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:04:26.066  INFO 61296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:04:26.253  INFO 61296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:04:26.887  INFO 61296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:04:26.897  INFO 61296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:04:28.362  WARN 61296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:04:31.463  INFO 61296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:04:33.432  INFO 61296 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 13.756 seconds (JVM running for 15.071)
+2022-12-23 15:08:44.926  INFO 61296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:08:44.930  INFO 61296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-23 15:08:44.949  INFO 61296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-23 15:08:53.813  INFO 70424 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 70424 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:08:53.822  INFO 70424 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:08:56.154  INFO 70424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:08:56.284  INFO 70424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:08:56.567  INFO 70424 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:08:57.445  INFO 70424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:08:57.457  INFO 70424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:08:57.458  INFO 70424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:08:57.668  INFO 70424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:08:57.669  INFO 70424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3737 ms
+2022-12-23 15:08:58.290  INFO 70424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:08:58.701  INFO 70424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:08:58.723  INFO 70424 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:08:58.724  INFO 70424 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:08:58.734  WARN 70424 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:08:58.776  INFO 70424 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.027s)
+2022-12-23 15:08:58.785  INFO 70424 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:08:58.786  INFO 70424 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:08:58.945  INFO 70424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:08:59.034  INFO 70424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:08:59.231  INFO 70424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:08:59.379  INFO 70424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:09:00.140  INFO 70424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:09:00.153  INFO 70424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:09:02.118  WARN 70424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:09:05.526  INFO 70424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:09:06.752  INFO 70424 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 14.246 seconds (JVM running for 15.458)
+2022-12-23 15:14:53.662  INFO 70424 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:14:53.662  INFO 70424 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:14:53.664  INFO 70424 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 15:14:54.742  INFO 70424 --- [http-nio-8095-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 612 ms
+2022-12-23 15:15:12.067  INFO 70424 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:15:12.069  INFO 70424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-23 15:15:12.078  INFO 70424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-23 15:15:20.143  INFO 58196 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 58196 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:15:20.147  INFO 58196 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:15:22.417  INFO 58196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:15:22.536  INFO 58196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:15:22.788  INFO 58196 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:15:23.341  INFO 58196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:15:23.352  INFO 58196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:15:23.353  INFO 58196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:15:23.529  INFO 58196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:15:23.529  INFO 58196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3285 ms
+2022-12-23 15:15:23.717  INFO 58196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:15:24.158  INFO 58196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:15:24.179  INFO 58196 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:15:24.180  INFO 58196 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:15:24.188  WARN 58196 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:15:24.227  INFO 58196 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.025s)
+2022-12-23 15:15:24.235  INFO 58196 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:15:24.235  INFO 58196 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:15:24.341  INFO 58196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:15:24.411  INFO 58196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:15:24.612  INFO 58196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:15:24.760  INFO 58196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:15:25.421  INFO 58196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:15:25.430  INFO 58196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:15:26.665  WARN 58196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:15:29.531  INFO 58196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:15:30.487  INFO 58196 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 11.766 seconds (JVM running for 13.007)
+2022-12-23 15:15:36.177  INFO 58196 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:15:36.177  INFO 58196 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:15:36.180  INFO 58196 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 15:15:36.931  INFO 58196 --- [http-nio-8095-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 463 ms
+2022-12-23 15:16:10.485  WARN 58196 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s223ms832µs500ns).
+2022-12-23 15:16:31.170  INFO 71272 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 71272 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:16:31.173  INFO 71272 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:16:33.385  INFO 71272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:16:33.496  INFO 71272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:16:33.745  INFO 71272 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:16:34.255  INFO 71272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:16:34.266  INFO 71272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:16:34.267  INFO 71272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:16:34.456  INFO 71272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:16:34.457  INFO 71272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3180 ms
+2022-12-23 15:16:34.644  INFO 71272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:16:34.883  INFO 71272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:16:34.906  INFO 71272 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:16:34.907  INFO 71272 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:16:34.916  WARN 71272 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:16:34.958  INFO 71272 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.027s)
+2022-12-23 15:16:34.967  INFO 71272 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:16:34.968  INFO 71272 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:16:35.074  INFO 71272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:16:35.144  INFO 71272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:16:35.356  INFO 71272 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:16:35.500  INFO 71272 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:16:36.063  INFO 71272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:16:36.073  INFO 71272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:16:37.251  WARN 71272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:16:40.229  INFO 71272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:16:41.399  INFO 71272 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 11.711 seconds (JVM running for 13.033)
+2022-12-23 15:16:46.178  INFO 71272 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:16:46.178  INFO 71272 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:16:46.180  INFO 71272 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-23 15:20:23.233  WARN 71272 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m48s244ms123µs700ns).
+2022-12-23 15:20:31.982  INFO 72700 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 72700 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:20:31.989  INFO 72700 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:20:34.613  INFO 72700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:20:34.756  INFO 72700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:20:35.065  INFO 72700 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:20:35.617  INFO 72700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:20:35.626  INFO 72700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:20:35.627  INFO 72700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:20:35.821  INFO 72700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:20:35.821  INFO 72700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3520 ms
+2022-12-23 15:20:36.002  INFO 72700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:20:36.246  INFO 72700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:20:36.271  INFO 72700 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:20:36.272  INFO 72700 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:20:36.280  WARN 72700 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:20:36.329  INFO 72700 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.032s)
+2022-12-23 15:20:36.337  INFO 72700 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:20:36.338  INFO 72700 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:20:36.442  INFO 72700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:20:36.535  INFO 72700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:20:36.795  INFO 72700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:20:36.954  INFO 72700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:20:37.592  INFO 72700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:20:37.605  INFO 72700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:20:39.418  WARN 72700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:20:43.085  INFO 72700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:20:44.100  INFO 72700 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 13.532 seconds (JVM running for 14.88)
+2022-12-23 15:22:17.582  INFO 72700 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:22:17.582  INFO 72700 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:22:17.585  INFO 72700 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 15:27:12.640  INFO 72664 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 72664 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:27:12.643  INFO 72664 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:27:15.618  INFO 72664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:27:15.736  INFO 72664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:27:16.001  INFO 72664 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:27:16.682  INFO 72664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:27:16.698  INFO 72664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:27:16.698  INFO 72664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:27:16.889  INFO 72664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:27:16.889  INFO 72664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4151 ms
+2022-12-23 15:27:17.107  INFO 72664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:27:17.379  INFO 72664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:27:17.402  INFO 72664 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:27:17.403  INFO 72664 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:27:17.410  WARN 72664 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:27:17.455  INFO 72664 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.029s)
+2022-12-23 15:27:17.463  INFO 72664 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:27:17.464  INFO 72664 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:27:17.563  INFO 72664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:27:17.645  INFO 72664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:27:17.852  INFO 72664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:27:17.998  INFO 72664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:27:18.604  INFO 72664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:27:18.614  INFO 72664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:27:19.820  WARN 72664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:27:22.865  INFO 72664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:27:23.818  INFO 72664 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 12.64 seconds (JVM running for 14.077)
+2022-12-23 15:32:23.122  INFO 54372 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 54372 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:32:23.128  INFO 54372 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:32:25.451  INFO 54372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:32:25.561  INFO 54372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:32:25.814  INFO 54372 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:32:26.467  INFO 54372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:32:26.478  INFO 54372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:32:26.479  INFO 54372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:32:26.685  INFO 54372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:32:26.685  INFO 54372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3470 ms
+2022-12-23 15:32:26.868  INFO 54372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:32:27.322  INFO 54372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:32:27.344  INFO 54372 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:32:27.345  INFO 54372 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:32:27.351  WARN 54372 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:32:27.391  INFO 54372 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.025s)
+2022-12-23 15:32:27.400  INFO 54372 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:32:27.401  INFO 54372 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:32:27.541  INFO 54372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:32:27.631  INFO 54372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:32:27.837  INFO 54372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:32:28.045  INFO 54372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:32:28.769  INFO 54372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:32:28.779  INFO 54372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:32:30.057  WARN 54372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:32:33.802  INFO 54372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:32:34.866  INFO 54372 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 13.511 seconds (JVM running for 16.56)
+2022-12-23 15:32:48.839  INFO 54372 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:32:48.840  INFO 54372 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:32:48.841  INFO 54372 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-23 15:43:23.846  INFO 76080 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 76080 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:43:23.851  INFO 76080 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:43:28.316  INFO 76080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:43:28.516  INFO 76080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:43:28.905  INFO 76080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:43:29.662  INFO 76080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:43:29.676  INFO 76080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:43:29.677  INFO 76080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:43:29.937  INFO 76080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:43:29.939  INFO 76080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5947 ms
+2022-12-23 15:43:30.235  INFO 76080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:43:30.703  INFO 76080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:43:30.727  INFO 76080 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:43:30.728  INFO 76080 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:43:30.737  WARN 76080 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:43:30.782  INFO 76080 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.030s)
+2022-12-23 15:43:30.793  INFO 76080 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:43:30.794  INFO 76080 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:43:30.939  INFO 76080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:43:31.029  INFO 76080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:43:31.336  INFO 76080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:43:31.530  INFO 76080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:43:32.359  INFO 76080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:43:32.371  INFO 76080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:43:33.953  WARN 76080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:43:38.565  INFO 76080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:43:39.640  INFO 76080 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 17.216 seconds (JVM running for 18.537)
+2022-12-23 15:43:58.208  INFO 76080 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:43:58.208  INFO 76080 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:43:58.211  INFO 76080 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-23 15:46:01.122  INFO 74616 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 74616 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:46:01.125  INFO 74616 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:46:03.209  INFO 74616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:46:03.331  INFO 74616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:46:03.611  INFO 74616 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:46:04.143  INFO 74616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:46:04.158  INFO 74616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:46:04.159  INFO 74616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:46:04.364  INFO 74616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:46:04.365  INFO 74616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3158 ms
+2022-12-23 15:46:04.528  INFO 74616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:46:04.989  INFO 74616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:46:05.026  INFO 74616 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:46:05.026  INFO 74616 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:46:05.033  WARN 74616 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:46:05.075  INFO 74616 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.027s)
+2022-12-23 15:46:05.084  INFO 74616 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:46:05.085  INFO 74616 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:46:05.191  INFO 74616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:46:05.280  INFO 74616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:46:05.522  INFO 74616 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:46:05.654  INFO 74616 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:46:06.317  INFO 74616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:46:06.327  INFO 74616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:46:07.515  WARN 74616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:46:10.309  INFO 74616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:46:11.351  INFO 74616 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 11.866 seconds (JVM running for 13.481)
+2022-12-23 15:46:16.168  INFO 74616 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:46:16.168  INFO 74616 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:46:16.170  INFO 74616 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-23 15:55:09.911  INFO 73640 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 73640 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:55:09.914  INFO 73640 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:55:11.978  INFO 73640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:55:12.099  INFO 73640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:55:12.342  INFO 73640 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:55:12.838  INFO 73640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:55:12.860  INFO 73640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:55:12.860  INFO 73640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:55:13.043  INFO 73640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:55:13.044  INFO 73640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3024 ms
+2022-12-23 15:55:13.223  INFO 73640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:55:13.654  INFO 73640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:55:13.674  INFO 73640 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:55:13.675  INFO 73640 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:55:13.682  WARN 73640 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:55:13.721  INFO 73640 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.024s)
+2022-12-23 15:55:13.729  INFO 73640 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:55:13.729  INFO 73640 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:55:13.841  INFO 73640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:55:13.916  INFO 73640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:55:14.099  INFO 73640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:55:14.225  INFO 73640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:55:14.766  INFO 73640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:55:14.775  INFO 73640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:55:15.973  WARN 73640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:55:19.177  INFO 73640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:55:20.149  INFO 73640 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 12.423 seconds (JVM running for 14.742)
+2022-12-23 15:55:44.616  INFO 73640 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:55:44.616  INFO 73640 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:55:44.618  INFO 73640 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 15:55:55.410  INFO 73732 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 73732 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:55:55.417  INFO 73732 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:55:57.725  INFO 73732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:55:57.868  INFO 73732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:55:58.146  INFO 73732 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:55:58.868  INFO 73732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:55:58.886  INFO 73732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:55:58.888  INFO 73732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:55:59.121  INFO 73732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:55:59.121  INFO 73732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3616 ms
+2022-12-23 15:55:59.418  INFO 73732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:55:59.761  INFO 73732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:55:59.813  INFO 73732 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:55:59.813  INFO 73732 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:55:59.823  WARN 73732 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:55:59.870  INFO 73732 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.031s)
+2022-12-23 15:55:59.879  INFO 73732 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:55:59.882  INFO 73732 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:56:00.086  INFO 73732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:56:00.219  INFO 73732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:56:00.515  INFO 73732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:56:00.761  INFO 73732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:56:01.486  INFO 73732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:56:01.500  INFO 73732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:56:03.018  WARN 73732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:56:06.710  INFO 73732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:56:07.751  INFO 73732 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 15.219 seconds (JVM running for 17.718)
+2022-12-23 15:56:19.657  INFO 73732 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:56:19.658  INFO 73732 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:56:19.659  INFO 73732 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-23 15:56:28.611  INFO 76144 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 76144 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:56:28.614  INFO 76144 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:56:31.204  INFO 76144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:56:31.385  INFO 76144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:56:31.617  INFO 76144 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:56:32.116  INFO 76144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:56:32.126  INFO 76144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:56:32.126  INFO 76144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:56:32.309  INFO 76144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:56:32.309  INFO 76144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3544 ms
+2022-12-23 15:56:32.497  INFO 76144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:56:32.929  INFO 76144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:56:32.950  INFO 76144 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:56:32.950  INFO 76144 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:56:32.957  WARN 76144 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:56:32.995  INFO 76144 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.023s)
+2022-12-23 15:56:33.003  INFO 76144 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:56:33.003  INFO 76144 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:56:33.102  INFO 76144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:56:33.164  INFO 76144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:56:33.393  INFO 76144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:56:33.538  INFO 76144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:56:34.094  INFO 76144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:56:34.104  INFO 76144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:56:35.274  WARN 76144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:56:38.284  INFO 76144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:56:39.282  INFO 76144 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 12.09 seconds (JVM running for 13.401)
+2022-12-23 15:56:46.900  INFO 76144 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:56:46.900  INFO 76144 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:56:46.902  INFO 76144 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 15:58:45.997  INFO 79852 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 79852 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 15:58:46.000  INFO 79852 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 15:58:48.654  INFO 79852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 15:58:48.799  INFO 79852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
+2022-12-23 15:58:49.129  INFO 79852 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 15:58:49.813  INFO 79852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 15:58:49.828  INFO 79852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 15:58:49.828  INFO 79852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 15:58:50.155  INFO 79852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 15:58:50.156  INFO 79852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4011 ms
+2022-12-23 15:58:50.385  INFO 79852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 15:58:50.879  INFO 79852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 15:58:50.905  INFO 79852 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 15:58:50.906  INFO 79852 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 15:58:50.916  WARN 79852 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 15:58:50.967  INFO 79852 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.035s)
+2022-12-23 15:58:50.976  INFO 79852 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 15:58:50.977  INFO 79852 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 15:58:51.117  INFO 79852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 15:58:51.211  INFO 79852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 15:58:51.560  INFO 79852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 15:58:51.760  INFO 79852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 15:58:52.603  INFO 79852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 15:58:52.616  INFO 79852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 15:58:54.116  WARN 79852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 15:58:57.815  INFO 79852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 15:58:58.967  INFO 79852 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 15.137 seconds (JVM running for 16.56)
+2022-12-23 15:59:05.530  INFO 79852 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 15:59:05.530  INFO 79852 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 15:59:05.532  INFO 79852 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-23 16:05:31.773  INFO 70592 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Starting MicroserviceExemploApplicationKt using Java 17.0.5 on nextage10 with PID 70592 (C:\workspace_intellij\spring-boot-kotlin-exemplo\target\classes started by user in C:\workspace_intellij\spring-boot-kotlin-exemplo)
+2022-12-23 16:05:31.776  INFO 70592 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : No active profile set, falling back to default profiles: default
+2022-12-23 16:05:34.249  INFO 70592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 16:05:34.370  INFO 70592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2022-12-23 16:05:34.595  INFO 70592 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61058ee6-5f85-366b-adff-f33377d53b0c
+2022-12-23 16:05:35.123  INFO 70592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-23 16:05:35.132  INFO 70592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 16:05:35.133  INFO 70592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-23 16:05:35.324  INFO 70592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 16:05:35.325  INFO 70592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3454 ms
+2022-12-23 16:05:35.492  INFO 70592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 16:05:35.712  INFO 70592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 16:05:35.734  INFO 70592 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-12-23 16:05:35.734  INFO 70592 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/rachidExample (PostgreSQL 15.1)
+2022-12-23 16:05:35.742  WARN 70592 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 15.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2022-12-23 16:05:35.777  INFO 70592 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.023s)
+2022-12-23 16:05:35.785  INFO 70592 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-12-23 16:05:35.786  INFO 70592 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-23 16:05:35.876  INFO 70592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 16:05:35.934  INFO 70592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-23 16:05:36.143  INFO 70592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 16:05:36.288  INFO 70592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2022-12-23 16:05:36.896  INFO 70592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 16:05:36.908  INFO 70592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 16:05:38.044  WARN 70592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 16:05:40.700  INFO 70592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-23 16:05:41.579  INFO 70592 --- [main] c.n.m.e.MicroserviceExemploApplicationKt : Started MicroserviceExemploApplicationKt in 11.037 seconds (JVM running for 12.244)
+2022-12-23 16:05:56.216  INFO 70592 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 16:05:56.217  INFO 70592 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 16:05:56.219  INFO 70592 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
