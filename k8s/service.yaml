@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-importacoes-dados-externos
+spec:
+  type: ClusterIP
+  selector:
+    app: microservice-importacoes-dados-externos
+  ports:
+  - port: 8095
+    targetPort: 8095

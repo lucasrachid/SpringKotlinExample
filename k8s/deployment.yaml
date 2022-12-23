@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-importacoes-dados-externos
+spec:
+  selector:
+    matchLabels:
+      app: microservice-importacoes-dados-externos
+  template:
+    metadata:
+      labels:
+        app: microservice-importacoes-dados-externos
+    spec:
+      dnsConfig:
+        options:
+          - name: single-request-reopen
+      containers:
+        - name: microservice-importacoes-dados-externos
+          image: softfocus/microservice-importacoes-dados-externos
+          ports:
+            - containerPort: 8095
