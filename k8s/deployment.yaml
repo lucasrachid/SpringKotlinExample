@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice-importacoes-dados-externos
+  name: microservice-api-rachid
 spec:
   selector:
     matchLabels:
-      app: microservice-importacoes-dados-externos
+      app: microservice-api-rachid
   template:
     metadata:
       labels:
-        app: microservice-importacoes-dados-externos
+        app: microservice-api-rachid
     spec:
       dnsConfig:
         options:
           - name: single-request-reopen
       containers:
-        - name: microservice-importacoes-dados-externos
-          image: softfocus/microservice-importacoes-dados-externos
+        - name: microservice-api-rachid
+          image: rachid/microservice-api-rachid
           ports:
-            - containerPort: 8095
+            - containerPort: 8080

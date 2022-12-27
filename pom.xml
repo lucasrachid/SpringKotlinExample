@@ -8,10 +8,10 @@
 		<version>2.6.3</version>
 		<relativePath/>
 	</parent>
-	<groupId>br.com.softfocus</groupId>
-	<artifactId>microservice-exemplo</artifactId>
+	<groupId>br.com.rachid</groupId>
+	<artifactId>microservice-api-rachid</artifactId>
 	<version>1.0.0</version>
-	<name>microservice-exemplo</name>
+	<name>microservice-api-rachid</name>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -83,17 +83,17 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.2.0</version>
+			<version>5.2.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.0.0</version>
+			<version>5.2.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>3.12.4</version>
+			<version>4.10.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -138,12 +138,12 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-csv</artifactId>
-			<version>1.5</version>
+			<version>1.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-			<version>2.9.0</version>
+			<version>2.10</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -152,7 +152,7 @@
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
-			<version>3.14.8</version>
+			<version>4.10.0</version>
 		</dependency>
 	</dependencies>
 

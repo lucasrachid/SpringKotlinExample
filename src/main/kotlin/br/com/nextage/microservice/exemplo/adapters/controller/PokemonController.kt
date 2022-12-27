@@ -1,6 +1,5 @@
 package br.com.nextage.microservice.exemplo.adapters.controller
 
-import br.com.nextage.microservice.exemplo.adapters.dto.PessoaDTO
 import br.com.nextage.microservice.exemplo.adapters.dto.PokemonDTO
 import br.com.nextage.microservice.exemplo.adapters.service.PokemonService
 import org.springframework.beans.factory.annotation.Autowired

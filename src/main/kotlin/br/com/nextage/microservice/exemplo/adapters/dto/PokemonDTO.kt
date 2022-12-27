@@ -1,6 +1,5 @@
 package br.com.nextage.microservice.exemplo.adapters.dto
 
-import br.com.nextage.microservice.exemplo.adapters.model.PessoaEntity
 import br.com.nextage.microservice.exemplo.adapters.model.PokemonEntity
 import com.fasterxml.jackson.annotation.JsonProperty
 

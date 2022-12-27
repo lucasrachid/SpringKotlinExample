@@ -8,10 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 @SpringBootApplication
 @EnableCaching
 @EnableDiscoveryClient
-class MicroserviceExemploApplication
+class MicroserviceApiRachidApplication
 
 fun main(args: Array<String>) {
-    runApplication<MicroserviceExemploApplication>(*args)
+    runApplication<MicroserviceApiRachidApplication>(*args)
 }
 
 

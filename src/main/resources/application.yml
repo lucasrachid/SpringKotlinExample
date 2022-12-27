@@ -1,5 +1,5 @@
 server:
-  port: 8095
+  port: 8080
 
 spring:
   flyway:
@@ -10,7 +10,7 @@ spring:
       date-time: yyyy-MM-dd HH:mm:ss
       time: HH:mm:ss
   application:
-    name: microservice-exemplo
+    name: microservice-api-rachid
   main:
     allow-bean-definition-overriding: true
   cloud:
@@ -48,18 +48,10 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
 
-logging:
-  file:
-    name: Sistema.log
-
 micro-service:
-  ms-character:
-    url: http://localhost:8080
-    list: /api/characters
   pokemon:
     url: https://pokeapi.co/api/v2/pokemon/
 
 springdoc:
   api-docs:
     path: /api-docs
-
