@@ -1,5 +1,7 @@
 package br.com.nextage.microservice.exemplo.adapters.dto
 
+import br.com.nextage.microservice.exemplo.adapters.model.PessoaEntity
+import br.com.nextage.microservice.exemplo.adapters.model.PokemonEntity
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class PokemonDTO(
@@ -21,7 +23,31 @@ data class PokemonDTO(
         var sprites: SpritesDTO? = null,
         var species: SpeciesDTO? = null,
         var held_items: List<HeldItemsDTO>? = null
-)
+){
+    constructor(pokemonEntity: PokemonEntity?) : this() {
+        this.id = pokemonEntity?.id
+        this.name = pokemonEntity?.nome
+        this.is_default = pokemonEntity?.padrao
+        this.order = pokemonEntity?.ordem
+        this.base_experience = pokemonEntity?.experiencia_base
+        this.height = pokemonEntity?.altura
+        this.weight = pokemonEntity?.peso
+        this.location_area_encounters = pokemonEntity?.local_para_encontrar
+    }
+
+    fun toEntity(): PokemonEntity {
+        return PokemonEntity(
+            this.id,
+            this.name,
+            this.is_default,
+            this.order,
+            this.base_experience,
+            this.height,
+            this.weight,
+            this.location_area_encounters
+        )
+    }
+}
 
 data class TypesDTO(
     var slot: Int? = null,

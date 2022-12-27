@@ -16,5 +16,6 @@ interface PokemonRepository : JpaRepository<PokemonEntity, Long> {
 
     fun findAll(spec: Specification<PokemonEntity?>?, page: Pageable?): Page<PokemonEntity>
 
+    fun findAllByIdIsNotNullOrderByIdAsc(pageable: Pageable): Page<PokemonEntity>
 
 }
