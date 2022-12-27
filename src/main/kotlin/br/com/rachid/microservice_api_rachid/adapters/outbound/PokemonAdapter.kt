@@ -1,8 +1,9 @@
-package br.com.rachid.microservice_api_rachid.adapters.service
+package br.com.rachid.microservice_api_rachid.adapters.outbound
 
 import br.com.rachid.microservice_api_rachid.adapters.dto.PokemonDTO
 import br.com.rachid.microservice_api_rachid.adapters.model.PokemonEntity
 import br.com.rachid.microservice_api_rachid.adapters.repository.PokemonRepository
+import br.com.rachid.microservice_api_rachid.ports.output.PokemonPort
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
@@ -14,9 +15,9 @@ import org.springframework.web.util.UriComponentsBuilder
 import reactor.core.publisher.Mono
 
 @Service
-class PokemonServiceImpl(
+class PokemonAdapter(
     val webClient: WebClient
-) : PokemonService {
+) : PokemonPort {
 
     @Autowired
     private lateinit var pokemonRepository: PokemonRepository;
