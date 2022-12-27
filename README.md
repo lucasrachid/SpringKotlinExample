@@ -1,8 +1,8 @@
 # Microservice Api Rachid
 Microservice para consumir e buscar informações de Pokemons.
 
-# Executando Localmente
-Para executar localmente, será necessário algumas configurações de ambiente.
+# Executando Projeto Local
+Para executar, será necessário algumas configurações de ambiente.
 Antes de executar, é recomentado realizar um `clean` e `install` no maven, para baixar todas as dependências do projeto.
 
 #Postman

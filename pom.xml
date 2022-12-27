@@ -9,9 +9,9 @@
 		<relativePath/>
 	</parent>
 	<groupId>br.com.rachid</groupId>
-	<artifactId>microservice-api-rachid</artifactId>
+	<artifactId>microservice_api_rachid</artifactId>
 	<version>1.0.0</version>
-	<name>microservice-api-rachid</name>
+	<name>microservice_api_rachid</name>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -153,6 +153,11 @@
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
 			<version>4.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-commons</artifactId>
+			<version>3.1.0</version>
 		</dependency>
 	</dependencies>
 

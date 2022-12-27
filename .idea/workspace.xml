@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47a02097-4a9a-432d-bbf6-e277a64a3595" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/MicroserviceApiRachidApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/MicroserviceApiRachidApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/config/ConfigScheduling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/config/ConfigScheduling.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/config/WebClientConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/config/WebClientConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/config/WebConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/config/WebConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/controller/PokemonController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/controller/PokemonController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/converter/Converter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/converter/Converter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/dto/PokemonDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/dto/PokemonDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/model/PokemonEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/model/PokemonEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/repository/PokemonRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/repository/PokemonRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/service/PokemonService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/service/PokemonService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/adapters/service/PokemonServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/service/PokemonServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/application/exception/CustomException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/application/exception/CustomException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/application/exception/ExceptionHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/application/exception/ExceptionHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/nextage/microservice/exemplo/application/exception/ExceptionResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/application/exception/ExceptionResponse.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JKOFiq5WsgHKuEiX5kdxeQRz1O" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.google.cloudcode.ide_session_index" value="20221227_0005" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FrontSpringKotlinPokemon" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroserviceApiRachidApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice_api_rachid" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.rachid.microservice_api_rachid.MicroserviceApiRachidApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47a02097-4a9a-432d-bbf6-e277a64a3595" name="Changes" comment="" />
+      <created>1671823214363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671823214363</updated>
+      <workItem from="1671823218837" duration="5087000" />
+      <workItem from="1672056381540" duration="16102000" />
+      <workItem from="1672143250668" duration="9317000" />
+      <workItem from="1672161179103" duration="69000" />
+      <workItem from="1672161275047" duration="121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
