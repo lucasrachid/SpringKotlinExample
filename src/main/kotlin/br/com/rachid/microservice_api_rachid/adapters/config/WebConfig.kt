@@ -52,7 +52,7 @@ class WebConfig : WebMvcConfigurer {
 
     @Bean
     fun webClient(): WebClient? {
-        val size = 16 * 1024 * 1024;
+        val size = 16 * 1024 * 1024
         val strategies = ExchangeStrategies.builder()
             .codecs { codecs: ClientCodecConfigurer ->
                 codecs.defaultCodecs().maxInMemorySize(size)

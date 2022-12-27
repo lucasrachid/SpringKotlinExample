@@ -5,6 +5,7 @@ import br.com.rachid.microservice_api_rachid.adapters.model.PokemonEntity
 import br.com.rachid.microservice_api_rachid.adapters.repository.PokemonRepository
 import br.com.rachid.microservice_api_rachid.ports.output.PokemonPort
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.http.HttpStatus
@@ -20,14 +21,17 @@ class PokemonAdapter(
 ) : PokemonPort {
 
     @Autowired
-    private lateinit var pokemonRepository: PokemonRepository;
+    private lateinit var pokemonRepository: PokemonRepository
+
+    @Value("\${micro-service.pokemon.url}")
+    private val urlApi: String? = null
 
     override fun searchPokemonById(id: Long): PokemonDTO? {
         val result = webClient
             .get()
             .uri(
                 UriComponentsBuilder
-                    .fromHttpUrl("https://pokeapi.co/api/v2/pokemon/${id}")
+                    .fromHttpUrl(urlApi + "$id")
                     .build()
                     .toUri()
             )
@@ -40,14 +44,14 @@ class PokemonAdapter(
     }
 
     override fun insertPokemonById(id: Long): PokemonDTO? {
-        var pokemonEntityList: ArrayList<PokemonEntity> = arrayListOf()
-        var pokemonDTO: PokemonDTO? = null
+        val pokemonEntityList: ArrayList<PokemonEntity> = arrayListOf()
+        var pokemonDTO: PokemonDTO?
         for (i in 1..905) {
             try {
-                var buscaPokemonDTO = pokemonRepository.findById(i.toLong());
+                val buscaPokemonDTO = pokemonRepository.findById(i.toLong())
                 if (buscaPokemonDTO.isEmpty) {
-                    pokemonDTO = searchPokemonById(i.toLong());
-                    var pokemonEntity = PokemonEntity();
+                    pokemonDTO = searchPokemonById(i.toLong())
+                    val pokemonEntity = PokemonEntity()
                     pokemonEntity.id = pokemonDTO?.id
                     pokemonEntity.nome = pokemonDTO?.name
                     pokemonEntity.ordem = pokemonDTO?.order
@@ -59,17 +63,17 @@ class PokemonAdapter(
                     pokemonEntityList.add(pokemonEntity)
                 }
             } catch (e: Exception) {
-                e.stackTrace;
+                e.stackTrace
             }
         }
 
-        pokemonRepository.saveAll(pokemonEntityList);
-        return null;
+        pokemonRepository.saveAll(pokemonEntityList)
+        return null
     }
 
     override fun deleteById(id: Long): String {
         try {
-            var pokemonToDelete = pokemonRepository.findById(id)
+            val pokemonToDelete = pokemonRepository.findById(id)
             if (!pokemonToDelete.isEmpty) {
                 pokemonRepository.deleteById(id)
             }
@@ -81,7 +85,6 @@ class PokemonAdapter(
     }
 
     override fun searchPokemonList(pageable: Pageable): Page<PokemonDTO> {
-        return pokemonRepository.findAll(null, pageable).map { PokemonDTO(it) };
+        return pokemonRepository.findAll(null, pageable).map { PokemonDTO(it) }
     }
-
 }

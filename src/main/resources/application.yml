@@ -40,7 +40,6 @@ spring:
     driverClassName: org.postgresql.Driver
     username: postgres
     password: Nexti10age
-    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
   data:
     web:
       pageable:
