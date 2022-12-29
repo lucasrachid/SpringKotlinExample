@@ -89,7 +89,7 @@
 					"response": []
 				},
 				{
-					"name": "Busca Paginada",
+					"name": "Paged Search",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -119,6 +119,31 @@
 									"key": "size",
 									"value": "10"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Image Pokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png",
+							"protocol": "https",
+							"host": [
+								"assets",
+								"pokemon",
+								"com"
+							],
+							"path": [
+								"assets",
+								"cms2",
+								"img",
+								"pokedex",
+								"detail",
+								"005.png"
 							]
 						}
 					},
