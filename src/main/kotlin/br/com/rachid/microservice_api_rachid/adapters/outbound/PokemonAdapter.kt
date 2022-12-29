@@ -14,6 +14,11 @@ import org.springframework.web.reactive.function.client.WebClient
 import org.springframework.web.reactive.function.client.toEntity
 import org.springframework.web.util.UriComponentsBuilder
 import reactor.core.publisher.Mono
+import java.io.*
+import java.net.URL
+import java.util.*
+import javax.imageio.ImageIO
+
 
 @Service
 class PokemonAdapter(
@@ -25,6 +30,12 @@ class PokemonAdapter(
 
     @Value("\${micro-service.pokemon.url}")
     private val urlApi: String? = null
+
+    @Value("\${micro-service.pokemon.urlImgStart}")
+    private val urlImgStart: String? = null
+
+    @Value("\${micro-service.pokemon.urlImgFinal}")
+    private val urlImgFinal: String? = null
 
     override fun searchPokemonById(id: Long): PokemonDTO? {
         val result = webClient
@@ -87,4 +98,37 @@ class PokemonAdapter(
     override fun searchPokemonList(pageable: Pageable): Page<PokemonDTO> {
         return pokemonRepository.findAll(null, pageable).map { PokemonDTO(it) }
     }
+
+    override fun searchAndSavePokeImg(): String {
+        var pokemonEntityList: ArrayList<PokemonEntity> = arrayListOf()
+
+        try {
+            pokemonEntityList = pokemonRepository.findAll() as ArrayList<PokemonEntity>
+            for (pokemon in pokemonEntityList) {
+                val buscaPokemonDTO = pokemon.id?.let { pokemonRepository.findById(it.toLong()) }
+                if (buscaPokemonDTO != null && buscaPokemonDTO.isPresent) {
+                    val numerousFormatted = "%03d".format(pokemon.id)
+                    val imagemApi = getPokeImgApi(numerousFormatted)
+                    buscaPokemonDTO.get().imagem_pokemon = imagemApi
+
+                }
+            }
+            pokemonRepository.saveAll(pokemonEntityList)
+
+        } catch (e: Exception) {
+            e.stackTrace
+            return "Processo com erro!"
+        }
+        return "Imagens salvas com sucesso!"
+    }
+
+    fun getPokeImgApi(numeroPoke: String): String {
+        val url = URL(urlImgStart + numeroPoke + urlImgFinal)
+        val bImage = ImageIO.read(url)
+        val bos = ByteArrayOutputStream()
+        ImageIO.write(bImage, "png", bos)
+        val data = bos.toByteArray()
+        return Base64.getEncoder().encodeToString(data)
+    }
+
 }

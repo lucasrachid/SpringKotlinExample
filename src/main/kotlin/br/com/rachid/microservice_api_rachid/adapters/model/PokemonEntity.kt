@@ -32,4 +32,7 @@ class PokemonEntity(
         @Column(name = "local_para_encontrar")
         var local_para_encontrar: String? = null,
 
+        @Column(name = "imagem_pokemon", length = 999999)
+        var imagem_pokemon: String? = null
+
         ): Serializable

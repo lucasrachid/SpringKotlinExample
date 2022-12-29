@@ -36,4 +36,9 @@ class PokemonController {
     fun list(@RequestParam search: String?, page: Pageable): Page<PokemonDTO> {
        return pokemonPort.searchPokemonList(page)
     }
+
+    @GetMapping(value = ["/v1/searchAndSavePokeImg"])
+    fun searchAndSavePokeImg(): ResponseEntity<String?> {
+        return ResponseEntity.status(HttpStatus.OK).body(pokemonPort.searchAndSavePokeImg())
+    }
 }

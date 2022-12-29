@@ -13,4 +13,6 @@ interface PokemonPort {
     fun deleteById(id: Long): String
 
     fun searchPokemonList(pageable: Pageable): Page<PokemonDTO>
+
+    fun searchAndSavePokeImg(): String
 }

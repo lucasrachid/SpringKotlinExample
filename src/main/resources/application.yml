@@ -50,6 +50,8 @@ spring:
 micro-service:
   pokemon:
     url: https://pokeapi.co/api/v2/pokemon/
+    urlImgStart: https://assets.pokemon.com/assets/cms2/img/pokedex/detail/
+    urlImgFinal: .png
 
 springdoc:
   api-docs:

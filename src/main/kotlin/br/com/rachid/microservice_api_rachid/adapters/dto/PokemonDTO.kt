@@ -21,7 +21,8 @@ data class PokemonDTO(
     var moves: List<MovesDTO>? = null,
     var sprites: SpritesDTO? = null,
     var species: SpeciesDTO? = null,
-    var held_items: List<HeldItemsDTO>? = null
+    var held_items: List<HeldItemsDTO>? = null,
+    var pokePicture: String? = null
 ){
     constructor(pokemonEntity: PokemonEntity?) : this() {
         this.id = pokemonEntity?.id
@@ -32,6 +33,7 @@ data class PokemonDTO(
         this.height = pokemonEntity?.altura
         this.weight = pokemonEntity?.peso
         this.location_area_encounters = pokemonEntity?.local_para_encontrar
+        this.pokePicture = pokemonEntity?.imagem_pokemon
     }
 
     fun toEntity(): PokemonEntity {
@@ -43,7 +45,8 @@ data class PokemonDTO(
             this.base_experience,
             this.height,
             this.weight,
-            this.location_area_encounters
+            this.location_area_encounters,
+            this.pokePicture
         )
     }
 }
