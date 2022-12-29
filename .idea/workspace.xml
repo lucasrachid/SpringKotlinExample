@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47a02097-4a9a-432d-bbf6-e277a64a3595" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/controller/PokemonController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/controller/PokemonController.kt" afterDir="false" />
-    </list>
+    <list default="true" id="47a02097-4a9a-432d-bbf6-e277a64a3595" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +108,7 @@
       <workItem from="1672161643570" duration="8148000" />
       <workItem from="1672230531603" duration="20044000" />
       <workItem from="1672316120973" duration="654000" />
-      <workItem from="1672317012622" duration="1735000" />
+      <workItem from="1672317012622" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="Quick fix.">
       <created>1672169600390</created>
@@ -132,5 +129,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Quick fix." />
     <option name="LAST_COMMIT_MESSAGE" value="Quick fix." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/br/com/rachid/microservice_api_rachid/adapters/outbound/PokemonAdapter.kt</url>
+          <line>102</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

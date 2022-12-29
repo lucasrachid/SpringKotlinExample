@@ -94,7 +94,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/pokemon/v1/buscaPaginada/?sort=id,asc&page=1&size=10",
+							"raw": "http://localhost:8080/pokemon/v1/pagedSearch/?sort=id,asc&page=1&size=10",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -103,7 +103,7 @@
 							"path": [
 								"pokemon",
 								"v1",
-								"buscaPaginada",
+								"pagedSearch",
 								""
 							],
 							"query": [
