@@ -32,7 +32,7 @@ class PokemonController {
         return ResponseEntity.status(HttpStatus.CREATED).body(pokemonPort.deleteById(id))
     }
 
-    @GetMapping(value = ["/v1/buscaPaginada"])
+    @GetMapping(value = ["/v1/pagedSearch"])
     fun list(@RequestParam search: String?, page: Pageable): Page<PokemonDTO> {
        return pokemonPort.searchPokemonList(page)
     }
