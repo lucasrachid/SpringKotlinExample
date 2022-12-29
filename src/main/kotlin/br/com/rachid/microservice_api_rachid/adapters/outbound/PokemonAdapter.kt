@@ -6,7 +6,6 @@ import br.com.rachid.microservice_api_rachid.adapters.repository.PokemonReposito
 import br.com.rachid.microservice_api_rachid.ports.output.PokemonPort
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
-import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
@@ -59,8 +58,7 @@ class PokemonAdapter(
         var pokemonDTO: PokemonDTO?
         for (i in 1..905) {
             try {
-                val buscaPokemonDTO = pokemonRepository.findById(i.toLong())
-                if (buscaPokemonDTO.isEmpty) {
+                pokemonRepository.findById(i.toLong()).let {
                     pokemonDTO = searchPokemonById(i.toLong())
                     val pokemonEntity = PokemonEntity()
                     pokemonEntity.id = pokemonDTO?.id
@@ -95,17 +93,14 @@ class PokemonAdapter(
         return "Pokemon excluído com sucesso!"
     }
 
-    override fun searchPokemonList(pageable: Pageable): Page<PokemonDTO> {
-        return pokemonRepository.findAll(null, pageable).map { PokemonDTO(it) }
-    }
+    override fun searchPokemonList(pageable: Pageable) = pokemonRepository.findAll(null, pageable).map { PokemonDTO(it) }
 
     override fun searchAndSavePokeImg(): String {
-        var pokemonEntityList: ArrayList<PokemonEntity> = arrayListOf()
-
+        val pokemonEntityList: ArrayList<PokemonEntity>
         try {
             pokemonEntityList = pokemonRepository.findAll() as ArrayList<PokemonEntity>
             for (pokemon in pokemonEntityList) {
-                val buscaPokemonDTO = pokemon.id?.let { pokemonRepository.findById(it.toLong()) }
+                val buscaPokemonDTO = pokemon.id?.let { pokemonRepository.findById(it) }
                 if (buscaPokemonDTO != null && buscaPokemonDTO.isPresent) {
                     val numerousFormatted = "%03d".format(pokemon.id)
                     val imagemApi = getPokeImgApi(numerousFormatted)
